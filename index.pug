@@ -1,0 +1,31 @@
+include includes/myvars.pug
+doctype
+html(lang='en')
+  head
+   meta(charset='utf-8')
+   meta(name='description' content='learn pugjs')
+   title My Resume
+   include includes/styles.pug
+  body
+    .mydiv heloooooo
+    p(class=className)
+     | I love 
+     b pug js
+     | and 
+     b sass
+
+     
+    //-this is for loop
+    ul
+     - for (var x =0; x<=30 ; x++)
+       li #{x}
+
+
+     //-this is while loop
+    -var z = 0
+    ul
+       while z<20
+         li=z++
+      
+     
+    include includes/scripts.pug
